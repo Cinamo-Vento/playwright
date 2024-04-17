@@ -1,0 +1,27 @@
+{
+  "name": "pw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:all": "npx playwright test",
+    "test:chrome:ui": "npx playwright test --ui --project=chromium",
+    "allure:generate_report": "allure generate allure-results -o allure-report --clean",
+    "allure:open_report": "allure open allure-report",
+    "format": "npx prettier . --check",
+    "format:fix": "npx prettier . --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.43.0",
+    "@types/node": "^20.12.5",
+    "allure-playwright": "^2.14.1",
+    "prettier": "3.2.5"
+  },
+  "dependencies": {
+    "2captcha": "^3.0.5-2",
+    "dotenv": "^16.4.5"
+  }
+}
